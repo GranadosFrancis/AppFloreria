@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo1.css">
+    <script src="https://kit.fontawesome.com/0458944bda.js" crossorigin="anonymous"></script>
+    
+    <title>Cabecera Fija Reponsive</title>
+<style type="text/css">
+   .container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color:#FFA07A(195, 189, 207, 0.89);
+  color:LIGHTSALMON ;
+  padding: 0rem 0;
+   /* hacer el menu fijo */
+   position: fixed;
+  left: 0;
+  top: 0;
+  /* ocuapamos todo el ancho */
+  right: 0;
+}
+
+.header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  /* lo alineamos al centro */
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 12px;
+  font-size: 1.3em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background:#FFA07A;
+}
+
+.main {
+  padding-top: 12rem;
+}
+menu{
+  height: 10%;
+  background-color:#FFA07A;
+}
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="#" class="logo"><h1>FLORERIA</h1>
+            <span class="menu-icon">Ver menú</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="PAGINA1.html" target="der">INICIO</a></li>
+                    <li><a href="PAGINA2.html" target="der">FLORES PARA REGALAR</a>
+                      <li><a href="PAGINA3.html" target="der">MÁS</a>
+                      <li><a href="DOMICILIO.html" target="der">DOMICILIO</a>
+                        <li><a href="sesion.html" target="der">INICIAR SESIÓN</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+ 
+</html>
